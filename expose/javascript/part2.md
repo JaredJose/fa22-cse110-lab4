@@ -33,3 +33,4 @@
   - F: true === Boolean(2) evaluates to true as Boolean(2) evaluates to true as 2 != 0. Therefore true === true, which is a true statement
 - Question 15: The difference between the equality operator (==) and the strict equality operator (===) is that the strict equality operator does not perform type conversions in order to make comparisons. In actuality this means that if one is comparing two operands of different data types, then the strict equality operator will strictly return false rather than trying to perform type conversions. 
 - Question 17: The result of calling modifyArray([1,2,3],doSomething) is the array [2,4,6]. This result is generated as the modifyArray function applies the doSomething function to each item in the passed in array. Since doSomething is multipling a passed in number by 2, it makes sense that the returned array would be the input array with each of its elements multiplied by 2. 
+- Question 18: 
