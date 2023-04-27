@@ -1,0 +1,7 @@
+- Question 1: Line 9 prints "values added: 20"
+- Question 2: Line 13 prints "final result: 20"
+- Question 3: Line 9 prints "values added: 20"
+- Question 4: The code returns an ReferenceError on line 13. This error is because the let keyword declares a variable with block scope. Thus, trying to access it outside of the block it was declared under will yield this error.
+- Question 5: Line 9 is never reached as a TypeError is thrown on line 7. This error is because we are trying to reassign the value of a const variable (which is immutable)
+- Question 6: Similar to question 5, Line 13 is never reached as a TypeError is thrown on line 7. This is because we are trying to reassign a const variable. 
+- 

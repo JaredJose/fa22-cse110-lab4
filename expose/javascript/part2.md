@@ -1,0 +1,35 @@
+- Question 1: On line 12, the code will print out a "3". This is because the variable "i" is the loop control variable for the for loop above. When discountPrices is being called with the given example, there are a total of 3 values in the array. Therefore, after the loops completion i will be 3. 
+- Question 2: On line 13, the code will print out a "150". This is because discountedPrice is a var variable which keeps track of the calculated discounted price of the values being passed into it. More specifically, it is referring to the result of the last value in the prices array and is storing the result of (300 * 0.5). 
+- Question 3: On line 14, the code will print out "150". For similar reasons to question 2, finalPrice is storing the last result of the calculation from the for loop. More specifically, finalPrice will store the result of (150*100/100) which equals 150. 
+- Question 4: This function will return an array consisting of the prices passed in with the discount applied. With the given example of prices being [100,200,300] and a discount of 0.5, the returned array will consist of [50,100,150]. 
+- Question 5: On line 12, a ReferenceError is thrown. This is because i is declared using the 'let' keyword, thus making it only available in the scope it was defined in. In this case, this means that the i variable is only accessible within the for loop.
+- Question 6: On line 13, a ReferenceError is thrown for similar reasons to question 5. Since discountedPrice is declared using the let variable, it will only be accessible in the block which it was declared in. Therefore, discountedPrice is only accessible within the for loop and will throw an error when being accessed outside.
+- Question 7: On line 14, the code will print out "150". This is because finalPrice is declared using let but at the top level of the function. This means that it can be accessed both inside and outside of the for loop.
+- Question 8: This function will return an array of values. In the given example of passing in [100,200,300] and a discount of 0.5, the returned array will consist of [50,100,150]. This is because the prices are being modified within the for loop and having the passed in discount applied to them. The result of this calculation is then added to the return array. 
+- Question 9: On line 11, the code will throw a ReferenceError. This is because i is defined using the let keyword, thus making it only accesible in the scope of the for loop which it was declared within. Therefore, trying to access it outside of this loop will cause an error to be thrown. 
+- Question 10: On line 12, the code will output a "3". This is because length is a variable which is declared at the top level of the function. Furthermore, the const variable is not being modified when it is being printed to the console. Finally, length represents the length of the array which is being passed into the function, thus an output of 3 makes sense. 
+- Question 11: This function returns an array of prices, [50,100,150]. This makes sense as the function's job is to apply the discount rate to the array of prices being passed into the function.
+- Question 12: 
+  - Accessing the value of the name property: student.name;
+  - Accesing the vaue of the Grad Year property: student["Grad Year"]
+  - Calling the function for the greeting property: student.greeting();
+  - Accessing the name property of the object in the Favorite Teacher property: student["Favorite Teacher"].name;
+  - Access index zero in the array of the courseLoad property: student.courseLoad[0];
+- Question 13 (Arithmetic):
+  - A: '3'+ 2 outputs 32 as 2 is interpereted as a string and thus a concatenation operation is completed.
+  - B: '3' - 2 outputs 1 as the 3 is interpereted as an integer, thus 3-2=1.
+  - C: 3 + null outputs 3 as the null is interpereted as a 0. Thus 3 + 0 = 3.
+  - D: '3' + null outputs 3null as null is interpereted as a string. Thus a concatentation operation is performed.
+  - E: true + 3 outputs 4 as true is evaluated as a 1. Thus 1 + 3 = 4
+  - F: false + null outputs 0 as false and null are both evaluated to 0. Thus 0 + 0 = 0
+  - G: '3' + undefined outputs 3undefined as undefined is evaluated as a string. Thus a concatenation operation is performed.
+  - H: '3' - undefined returns NaN 
+- Question 14 (Comparison):
+  - A: '2' > 1 evaluates to True as the 2 is interpereted as its integer equivalent.
+  - B: '2' < '12' evaluates to false as the two values are being compared as strings not integers.
+  - C: 2 == '2' evaluates to true as the '2' is evaluated as its integer equivalent.
+  - D: 2 === '2' evaluates to false as it is using the strict equality operator which returns false any time the data types of its operands are different.
+  - E: true == 2 evaluates to false as true is evaluated to 1 and 1 != 2
+  - F: true === Boolean(2) evaluates to true as Boolean(2) evaluates to true as 2 != 0. Therefore true === true, which is a true statement
+- Question 15: The difference between the equality operator (==) and the strict equality operator (===) is that the strict equality operator does not perform type conversions in order to make comparisons. In actuality this means that if one is comparing two operands of different data types, then the strict equality operator will strictly return false rather than trying to perform type conversions. 
+- Question 17: The result of calling modifyArray([1,2,3],doSomething) is the array [2,4,6]. This result is generated as the modifyArray function applies the doSomething function to each item in the passed in array. Since doSomething is multipling a passed in number by 2, it makes sense that the returned array would be the input array with each of its elements multiplied by 2. 
